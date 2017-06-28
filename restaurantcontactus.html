@@ -4,6 +4,8 @@
         <title>Nom! Nom! Nom! Contact</title>
     </head>
     <body>
+        <center><h1>Happy Burger</h1></center>
+        <hr>
         <table>
             <tr>
                 <td><a href="restauranthome.html">Home</a></td>
@@ -12,5 +14,53 @@
             </tr>
         </table>
         <hr>
+        <form action="fakePage.html" method="POST">
+            <table>
+                <tr>
+                    <td align="right">Name:</td>
+                    <td><input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td><input type="text" name="eMail" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Phone:</td>
+                    <td><input type="text" name="phone" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Reason for Inquiry:</td>
+                    <td><select>
+                            <option value="catering">Catering</option>
+                            <option value="private">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td align="right">Additional Information:</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right">Have you been to the restaurant?:</td>
+                    <td><input type="radio" name="been" value="No" checked/>No
+                    <input type="radio" name="been" value="Yes"/>Yes</td>
+                </tr>
+                <tr>
+                    <td>Best days to contact you:</td>
+                    <td>
+                        <input type="checkbox" name="m" value="M" />M
+                        <input type="checkbox" name="t" value="T" />T
+                        <input type="checkbox" name="w" value="W" />W
+                        <input type="checkbox" name="th" value="Th" />Tr
+                        <input type="checkbox" name="f" value="F" />F
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="sendRequest" value="Send Request"/></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
