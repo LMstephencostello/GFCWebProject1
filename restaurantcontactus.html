@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            .label1 {
+                text-align:right;
+            }
+        </style>        
         <title>Nom! Nom! Nom! Contact</title>
     </head>
     <body>
-        <center><h1>Happy Burger</h1></center>
+        <center>
+        <p class="headerfooter">
+            Happy Burger
+        </p>
+        </center>
         <hr>
         <table>
             <tr>
@@ -14,22 +24,23 @@
             </tr>
         </table>
         <hr>
+        <center>
         <form action="fakePage.html" method="POST">
             <table>
                 <tr>
-                    <td align="right">Name:</td>
+                    <td class="label1">Name:</td>
                     <td><input type="text" name="name" /></td>
                 </tr>
                 <tr>
-                    <td align="right">Email:</td>
+                    <td class="label1">Email:</td>
                     <td><input type="text" name="eMail" /></td>
                 </tr>
                 <tr>
-                    <td align="right">Phone:</td>
+                    <td class="label1">Phone:</td>
                     <td><input type="text" name="phone" /></td>
                 </tr>
                 <tr>
-                    <td align="right">Reason for Inquiry:</td>
+                    <td class="label1">Reason for Inquiry:</td>
                     <td><select>
                             <option value="catering">Catering</option>
                             <option value="private">Private Party</option>
@@ -38,11 +49,11 @@
                         </select></td>
                 </tr>
                 <tr>
-                    <td align="right">Additional Information:</td>
+                    <td class="label1">Additional Information:</td>
                     <td><textarea></textarea></td>
                 </tr>
                 <tr>
-                    <td align="right">Have you been to the restaurant?:</td>
+                    <td class="label1">Have you been to the restaurant?:</td>
                     <td><input type="radio" name="been" value="No" checked/>No
                     <input type="radio" name="been" value="Yes"/>Yes</td>
                 </tr>
@@ -62,5 +73,9 @@
                 </tr>
             </table>
         </form>
+        <center>
+        <hr>
+        <center><p class="headerfooter">Rt 1, Hampton, NH, 03842</p></center>
+        <center><p class="headerfooter">111-222-3333</p></center>
     </body>
 </html>
