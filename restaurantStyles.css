@@ -3,3 +3,17 @@
   font-size: xx-large;
   color: blue;
 }
+
+a {
+  font-weight: none;
+  text-decoration: none;
+}
+
+a:visited {
+  color: Red;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
