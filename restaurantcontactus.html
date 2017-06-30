@@ -2,6 +2,17 @@
 <html>
     <head>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
+
+        </script>
+        
         <style>
             .label1 {
                 text-align:right;
@@ -11,74 +22,78 @@
         <title>Nom! Nom! Nom! Contact</title>
     </head>
     <body>
-        <div style="font-style:italic">
-            <center>
-            <p class="headerfooter">
-                Happy Burger
-            </p>
-            </center>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- begin bootstrap grid test -->
+                <div style="font-style:italic">
+                    <center>
+                    <p class="headerfooter">
+                        Happy Burger
+                    </p>
+                    </center>
+                </div>
+                <hr>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="restauranthome.html">Home</a></li>
+                    <li><a href="restaurantmenu.html">Menu</a></li>
+                    <li><a href="restaurantcontactus.html">Contact Us</a></li>
+                </ul>        
+                <hr>
+                <center>
+                <form action="fakePage.html" method="POST">
+                    <table>
+                        <tr>
+                            <td class="label1">Name:</td>
+                            <td><input type="text" name="name" /></td>
+                        </tr>
+                        <tr>
+                            <td class="label1">Email:</td>
+                            <td><input type="text" name="eMail" /></td>
+                        </tr>
+                        <tr>
+                            <td class="label1">Phone:</td>
+                            <td><input type="text" name="phone" /></td>
+                        </tr>
+                        <tr>
+                            <td class="label1">Reason for Inquiry:</td>
+                            <td><select>
+                                    <option value="catering">Catering</option>
+                                    <option value="private">Private Party</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="label1" style="font-weight: normal;">Additional Information:</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="label1">Have you been to the restaurant?:</td>
+                            <td><input type="radio" name="been" value="No" checked/>No
+                            <input type="radio" name="been" value="Yes"/>Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="label1">Best days to contact you:</td>
+                            <td>
+                                <input type="checkbox" name="m" value="M" />M
+                                <input type="checkbox" name="t" value="T" />T
+                                <input type="checkbox" name="w" value="W" />W
+                                <input type="checkbox" name="th" value="Th" />Tr
+                                <input type="checkbox" name="f" value="F" />F
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" name="sendRequest" value="Send Request"/></td>
+                        </tr>
+                    </table>
+                </form>
+                <center>
+                <hr>
+                <center><p class="headerfooter">Rt 1, Hampton, NH, 03842</p></center>
+                <center><p class="headerfooter">111-222-3333</p></center>
+            </div>
         </div>
-        <hr>
-        <table>
-            <tr>
-                <td><a href="restauranthome.html">Home</a></td>
-                <td><a href="restaurantmenu.html">Menu</a></td>
-                <td><a href="restaurantcontactus.html">Contact Us</a></td>
-            </tr>
-        </table>
-        <hr>
-        <center>
-        <form action="fakePage.html" method="POST">
-            <table>
-                <tr>
-                    <td class="label1">Name:</td>
-                    <td><input type="text" name="name" /></td>
-                </tr>
-                <tr>
-                    <td class="label1">Email:</td>
-                    <td><input type="text" name="eMail" /></td>
-                </tr>
-                <tr>
-                    <td class="label1">Phone:</td>
-                    <td><input type="text" name="phone" /></td>
-                </tr>
-                <tr>
-                    <td class="label1">Reason for Inquiry:</td>
-                    <td><select>
-                            <option value="catering">Catering</option>
-                            <option value="private">Private Party</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                        </select></td>
-                </tr>
-                <tr>
-                    <td class="label1" style="font-weight: normal;">Additional Information:</td>
-                    <td><textarea></textarea></td>
-                </tr>
-                <tr>
-                    <td class="label1">Have you been to the restaurant?:</td>
-                    <td><input type="radio" name="been" value="No" checked/>No
-                    <input type="radio" name="been" value="Yes"/>Yes</td>
-                </tr>
-                <tr>
-                    <td class="label1">Best days to contact you:</td>
-                    <td>
-                        <input type="checkbox" name="m" value="M" />M
-                        <input type="checkbox" name="t" value="T" />T
-                        <input type="checkbox" name="w" value="W" />W
-                        <input type="checkbox" name="th" value="Th" />Tr
-                        <input type="checkbox" name="f" value="F" />F
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" name="sendRequest" value="Send Request"/></td>
-                </tr>
-            </table>
-        </form>
-        <center>
-        <hr>
-        <center><p class="headerfooter">Rt 1, Hampton, NH, 03842</p></center>
-        <center><p class="headerfooter">111-222-3333</p></center>
     </body>
 </html>
